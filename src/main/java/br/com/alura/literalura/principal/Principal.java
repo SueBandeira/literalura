@@ -1,6 +1,8 @@
 package br.com.alura.literalura.principal;
 
-import br.com.alura.literalura.model.*;
+import br.com.alura.literalura.model.DadosLivro;
+import br.com.alura.literalura.model.DadosLivrosResultado;
+import br.com.alura.literalura.model.Livro;
 import br.com.alura.literalura.repository.LivroRepository;
 import br.com.alura.literalura.service.ConsumoAPI;
 import br.com.alura.literalura.service.ConverteDados;

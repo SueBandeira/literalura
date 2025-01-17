@@ -15,11 +15,12 @@ public class Livro {
 
   private String titulo;
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
   @JoinColumn(name = "autor_id")
   private Autor autor;
 
-  @ElementCollection(targetClass = Idiomas.class)
+
+//  @ElementCollection(targetClass = Idiomas.class)
   @Enumerated(EnumType.STRING)
   @CollectionTable(name = "livro_idiomas", joinColumns = @JoinColumn(name = "livro_id"))
   @Column(name = "idioma")
